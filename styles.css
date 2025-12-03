@@ -618,34 +618,138 @@ body {
         flex-direction: column;
         text-align: center;
         padding: 2rem 1rem;
+        min-height: auto;
     }
     
     .hero-title {
         font-size: 2.5rem;
+        line-height: 1.2;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .hero-description p {
+        font-size: 1rem;
     }
     
     .hero-visual {
         margin-top: 3rem;
-    }
-    
-    .nav-menu {
-        display: none;
+        transform: scale(0.8);
     }
     
     .services-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
     }
     
     .contact-content {
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
     
     .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        max-width: 300px;
         justify-content: center;
     }
     
     .section-title {
         font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .about-intro {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+    
+    .skill-item {
+        padding: 1.5rem;
+    }
+    
+    .skill-item i {
+        font-size: 2rem;
+    }
+    
+    .skill-item h4 {
+        font-size: 1.1rem;
+    }
+    
+    .contact-item {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    .contact-item i {
+        font-size: 1.5rem;
+        width: 40px;
+    }
+    
+    .contact-cta {
+        padding: 1.5rem;
+    }
+    
+    .services {
+        padding: 3rem 0 1rem 0;
+    }
+    
+    .about {
+        padding: 1rem 0 3rem 0;
+    }
+    
+    .contact {
+        padding: 3rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .hero-visual {
+        transform: scale(0.6);
+    }
+    
+    .floating-cards {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .card {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
     }
 }
 
