@@ -470,6 +470,22 @@ body {
     margin-bottom: 3rem;
 }
 
+/* Mobile: 1 column */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+/* Small mobile: still 1 column */
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
 .skill-item {
     background: rgba(26, 26, 46, 0.6);
     border: 1px solid rgba(0, 204, 255, 0.3);
@@ -644,11 +660,6 @@ body {
         gap: 1.5rem;
     }
     
-    .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-    }
-    
     .contact-content {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -730,11 +741,6 @@ body {
     
     .container {
         padding: 0 1rem;
-    }
-    
-    .skills-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
     }
     
     .hero-visual {
