@@ -660,17 +660,19 @@ body {
         gap: 1.5rem;
     }
     
-<<<<<<< HEAD
-=======
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }
     
->>>>>>> d8dea0f114db9365f9b3a0a5a70de011885e3bba
     .contact-content {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 1.5rem;
     }
     
     .cta-buttons {
