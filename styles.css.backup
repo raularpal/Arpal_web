@@ -473,7 +473,7 @@ body {
 /* Mobile: 1 column */
 @media (max-width: 768px) {
     .skills-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         gap: 1.5rem;
     }
 }
@@ -481,7 +481,7 @@ body {
 /* Small mobile: still 1 column */
 @media (max-width: 480px) {
     .skills-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         gap: 1rem;
     }
 }
