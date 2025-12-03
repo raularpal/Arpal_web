@@ -628,6 +628,16 @@ body {
     color: var(--text-gray);
 }
 
+.arpal-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+.arpal-link:hover {
+    text-decoration: underline;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero {
