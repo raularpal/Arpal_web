@@ -753,14 +753,6 @@ body {
         padding: 0 1rem;
     }
     
-<<<<<<< HEAD
-=======
-    .skills-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-    
->>>>>>> d8dea0f114db9365f9b3a0a5a70de011885e3bba
     .hero-visual {
         transform: scale(0.6);
     }
