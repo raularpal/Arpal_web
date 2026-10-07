@@ -180,6 +180,11 @@ h2{font-size:clamp(1.9rem,4vw,2.8rem);font-weight:800;letter-spacing:-.03em;line
 .legend i{width:14px;height:14px;border-radius:4px;display:inline-block}
 .cal-note{margin-top:18px;padding:16px 18px;border-radius:12px;background:rgba(61,220,151,.07);border:1px solid rgba(61,220,151,.2);color:#bdebd4;font-size:.92rem}
 
+/* Video */
+.video-wrap{margin-top:40px;padding:14px;border-radius:24px;box-shadow:0 30px 80px -30px rgba(92,200,255,.35)}
+.video-wrap video{display:block;width:100%;aspect-ratio:16/9;border-radius:14px;background:#000}
+.video-note{margin-top:14px;color:var(--muted);font-size:.86rem;text-align:center}
+
 /* Contact */
 .contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px}
 .ccard{padding:24px;display:flex;flex-direction:column;gap:12px;transition:transform .3s,border-color .3s}
@@ -244,6 +249,7 @@ footer{border-top:1px solid var(--line);margin-top:40px}
   <div class="nav-in">
     <a href="#inicio" class="logo">Raúl<span>.</span>Arpal</a>
     <div class="nav-links">
+      <a href="#video">Vídeo</a>
       <a href="#sobre-mi">Sobre mí</a>
       <a href="#proyectos">Proyectos</a>
       <a href="#experiencia">Experiencia</a>
@@ -277,6 +283,10 @@ footer{border-top:1px solid var(--line);margin-top:40px}
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
             Escríbeme
           </a>
+          <a class="btn btn-ghost" href="#video">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            Ver mi vídeo CV
+          </a>
         </div>
       </div>
     </div>
@@ -288,6 +298,20 @@ footer{border-top:1px solid var(--line);margin-top:40px}
       <div class="stat glass reveal d3"><div class="num"><b class="count" data-to="3">0</b></div><div class="lbl">idiomas: español, catalán e inglés</div></div>
     </div>
   </div>
+</section>
+
+<!-- VÍDEO -->
+<section id="video">
+  <div class="eyebrow reveal">Vídeo CV</div>
+  <h2 class="reveal d1">Mi CV en un minuto</h2>
+  <p class="lead reveal d2">Si prefieres verlo antes que leerlo, aquí lo tienes. También lo he hecho yo con herramientas de IA.</p>
+  <div class="video-wrap glass reveal">
+    <video controls playsinline preload="metadata" poster="poster.jpg">
+      <source src="video.mp4" type="video/mp4">
+      Tu navegador no puede reproducir el vídeo. <a href="video.mp4">Descárgalo aquí</a>.
+    </video>
+  </div>
+  <p class="video-note">Duración: 1 min 12 s · Con sonido</p>
 </section>
 
 <!-- SOBRE MÍ -->
